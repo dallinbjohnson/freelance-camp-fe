@@ -1,0 +1,25 @@
+.app-body {
+	margin-top: 90px;
+}
+
+.nav-styles {
+	background-color: #1a1b22;
+}
+
+.nav-styles a {
+	color: white;
+}
+.nav-styles a:hover {
+	color: #c2c2c4;
+}
+.nav-link.active {
+	color: #e64758 !important;
+}
+
+.dropdown-links a {
+	color: #1a1b22;
+}
+.dropdown-links a:hover {
+	color: #252830;
+	background-color: #c2c2c4;
+}
