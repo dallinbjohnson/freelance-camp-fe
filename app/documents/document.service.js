@@ -13,9 +13,10 @@ var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var Rx_1 = require("rxjs/Rx");
 var DocumentService = (function () {
+    // https://dj-freelance-documents.herokuapp.com/freelance_documents.json
     function DocumentService(http) {
         this.http = http;
-        this.documentsUrl = 'https://dj-freelance-documents.herokuapp.com/freelance_documents.json';
+        this.documentsUrl = 'http://localhost:3001/freelance_documents.json';
     }
     DocumentService.prototype.getDocuments = function () {
         return this.http.get(this.documentsUrl)
