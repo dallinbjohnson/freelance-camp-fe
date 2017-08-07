@@ -13,10 +13,10 @@ var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var Rx_1 = require("rxjs/Rx");
 var ProposalService = (function () {
-    // https://dj-freelance-proposal.herokuapp.com/proposals
+    // http://localhost:3002/proposals
     function ProposalService(http) {
         this.http = http;
-        this.proposalsUrl = 'http://localhost:3002/proposals';
+        this.proposalsUrl = 'https://dj-freelance-proposal.herokuapp.com/proposals';
     }
     ProposalService.prototype.getProposals = function () {
         return this.http.get(this.proposalsUrl)
